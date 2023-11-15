@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/graph.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Interactive Scatterplot Graph</title>
+</head>
+
+<body id="body">
+    <header id="header" class="shadow bg-light + text-center">
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand text-dark">
+                API Website: APOD
+             </a>
+
+             <!-- toggle button -->
+             <button class="toggle-button">
+                 <span><i class="fas fa-bars"></i></span>
+             </button>
+
+             <!-- collapse on toggle button click -->
+             <section class="collapse">
+                 <ul class="navbar-nav">
+                     <a href="../index.html" class="nav-link">Home</a>
+                     <a href="../html/populationmap.html" class="nav-link">Population</a>
+                     <a href="../html/datavisualisations.html" class="nav-link">Scatterplot</a>
+                     <a href="../html/heatmap.html" class="nav-link">Heatmap</a>
+                     <a href="../html/closereading.html" class="nav-link">Blog 1</a>
+                     <a href="../html/blog2.html" class="nav-link">Blog 2</a>
+                     <a href="../html/blog3.html" class="nav-link">Blog 3</a>
+                     <a href="../html/blog4.html" class="nav-link">Blog 4</a>
+                     <a href="../html/criticalreflection.html" class="nav-link">Reflection</a>
+                     <a href="../html/designsection.html" class="nav-link">Design</a>
+                     <a href="../html/dataart.html" class="nav-link">Art</a>
+                 </ul>
+             </section>
+        </nav>
+    </header>
+
+<body>
+    <svg id='canvas'>
+        <text id='title' y='20' x='150'>Doping Timeline: Cyclists [1994 - 2016]</text>
+    </svg>
+    <div id='legend'>
+        YEAR (x) vs TIME (Y) </br />
+        Red = Doping Allegation | 
+        White = No Doping Allegations
+    </div>
+    <div id='tooltip'>
+
+    </div>
+</body>
+<script defer src='../js/graph.js'></script>
+<script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+</html>

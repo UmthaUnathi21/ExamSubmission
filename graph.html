@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="graph.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Interactive Scatterplot Graph</title>
+</head>
+
+<body id="body">
+    <header id="header" class="shadow bg-light + text-center">
+        <nav class="container navbar">
+            <a href="index.html" class="nav-brand text-dark">
+                API Website: APOD
+             </a>
+
+             <!-- toggle button -->
+             <button class="toggle-button">
+                 <span><i class="fas fa-bars"></i></span>
+             </button>
+
+             <!-- collapse on toggle button click -->
+             <section class="collapse">
+                 <ul class="navbar-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                     <a href="populationmap.html" class="nav-link">Population</a>
+                     <a href="datavisualisations.html" class="nav-link">Scatterplot</a>
+                     <a href="heatmap.html" class="nav-link">Heatmap</a>
+                     <a href="closereading.html" class="nav-link">Blog 1</a>
+                     <a href="blog2.html" class="nav-link">Blog 2</a>
+                     <a href="blog3.html" class="nav-link">Blog 3</a>
+                     <a href="blog4.html" class="nav-link">Blog 4</a>
+                     <a href="criticalreflection.html" class="nav-link">Reflection</a>
+                     <a href="designsection.html" class="nav-link">Design</a>
+                     <a href="dataart.html" class="nav-link">Art</a>
+                 </ul>
+             </section>
+        </nav>
+    </header>
+
+<body>
+    <svg id='canvas'>
+        <text id='title' y='20' x='150'>Doping of Professional Cyclists</text>
+    </svg>
+    <div id='legend'>
+        YEAR (x) vs TIME (Y) </br />
+        Red = Doping Allegation | 
+        White = No Doping Allegations
+    </div>
+    <div id='tooltip'>
+
+    </div>
+</body>
+<script defer src='graph.js'></script>
+<script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+<!-- footer -->
+<footer id="footer">
+    <section class="container">
+        <section class="row mb-3">
+            <section class="col-3">
+               <div>
+                <h2 class="footer-title secondary-title">About Me</h2>
+        
+                <section class="secondary-title text-secondary">
+                     <p class="mt-2 ">
+                         My Name is Umtha-Unathi Mavuso I am third-year game designer and web developer.
+                     </p>
+                     
+                     <address>
+                         <i class="fas fa-map-marker-alt text-primary"></i> 
+                         1 Jan Smuts Ave, Braamfontein, Johannesburg, 2017, South Africa
+                     </address>
+
+                     <section class="phone">
+                         <i class="fas fa-mobile text-primary"></i> 
+                         508-507-2209
+                     </section>
+
+                     <section class="email">
+                         <i class="fas fa-envelope text-primary"></i> 
+                         2483967@students.wits.ac.za
+                     </section>
+
+                </section>
+               </div>
+            </section>
+            <section class="col-3">
+               <div>
+                <h3 class="footer-title secondary-title">Relevant blog Posts</h3>
+
+                <section class="feature-post">
+                    <section class="flex-item">
+                        <article class="article">
+                            <section class="d-flex">
+                                <a href="closereading.html">
+                                    <img src="./images/clsreadbk (1).jpg" class="object-fit px-1" alt="">
+                                    <section class="px-1">
+                                        <a href="closereading.html" class="text-title display-2 text-dark">
+                                         Blog 1
+                                        </a>
+                                        <p class="secondary-title text-secondary display-3">
+                                             <span><i class="far fa-clock text-primary"></i>August 2023 </span>
+                                        </p>
+                                    </section>
+                                </a>
+                            </section>
+                        </article>
+                    </section>
+                    <section class="flex-item">
+                     <article class="article">
+                         <section class="d-flex">
+                             <a href="criticalreflection.html">
+                                 <img src="./images/rflc (1).jpg" class="object-fit px-1" alt="">
+                                 <section class="px-1">
+                                     <a href="criticalreflection.html" class="text-title display-2 text-dark">
+                                      Critical Reflection
+                                     </a>
+                                     <p class="secondary-title text-secondary display-3">
+                                          <span><i class="far fa-clock text-primary"></i>August 2023 </span>
+                                     </p>
+                                 </section>
+                             </a>
+                         </section>
+                     </article>
+                      </section>
+                      <section class="flex-item">
+                         <article class="article">
+                             <section class="d-flex">
+                                 <a href="datavisualisations.html">
+                                     <img src="./images/datav (1).png" class="object-fit px-1" alt="">
+                                     <section class="px-1">
+                                         <a href="datavisualisations.html" class="text-title display-2 text-dark">
+                                          Data-Visualisations
+                                         </a>
+                                         <p class="secondary-title text-secondary display-3">
+                                              <span><i class="far fa-clock text-primary"></i> August 2023 </span>
+                                         </p>
+                                     </section>
+                                 </a>
+                             </section>
+                         </article>
+                     </section>
+                     <section class="flex-item">
+                         <article class="article">
+                             <section class="d-flex">
+                                 <a href="dataart.html">
+                                     <img src="./images/dataart (1).jpg" class="object-fit px-1" alt="">
+                                     <section class="px-1">
+                                         <a href="dataart.html" class="text-title display-2 text-dark">
+                                          Data Art
+                                         </a>
+                                         <p class="secondary-title text-secondary display-3">
+                                              <span><i class="far fa-clock text-primary"></i> August 2023 </span>
+                                         </p>
+                                     </section>
+                                 </a>
+                             </section>
+                         </article>
+                     </section>
+                    </div>
+                </section>
+            </section>
+            <section class="col-3">
+               <div>
+                 <h4 class="footer-title secondary-title">Tags</h4>
+
+                 <section class="tags">
+                     <section class="d-flex flex-wrap">
+                         <a href="index.html" class="nav-link btn bg-light">Home</a>
+                         <a href="planets.html" class="nav-link btn bg-light">CTDM</a>
+                         <a href="closereading.html" class="nav-link btn bg-light">Blog 1</a>
+                         <a href="blog2.html" class="nav-link btn bg-light">Blog 2</a>
+                         <a href="blog3.html" class="nav-link btn bg-light">Blog 3</a>
+                         <a href="blog4.html" class="nav-link">Blog 4</a>
+                         <a href="criticalreflection.html" class="nav-link btn bg-light">Reflection</a>
+                         <a href="datavisualisations.html" class="nav-link btn bg-light">Scatterplot</a>
+                         <a href="heatmap.html" class="nav-link btn bg-light">Heatmap</a>
+                         <a href="dataart.html" class="nav-link btn bg-light">Art</a>
+                     </section>
+                 </section>
+
+                 <h5 class="footer-title secondary-title mt-2">Social</h5>
+
+                        <section class="tags social">
+                            <section class="d-flex flex-wrap">
+                                <a href="#" class="nav-link btn bg-light"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="nav-link btn bg-light"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="nav-link btn bg-light"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="nav-link btn bg-light"><i class="fab fa-dribbble"></i></a>
+                            </section>
+                 </section>
+                </div>
+            </section>
+        </section>
+
+        <!-- copyrights  -->
+        <section class="copyrights">
+            <p class="text-center text-secondary display-2">
+                 © 2023 <a href="index.html" class="text-primary">API Website</a> - Personal Blog. All rights reserved.
+            </p>
+        </section>
+    </section>
+</footer>
+<!-- .footer -->
+<!-- swiper slider cdn -->
+<!-- masonry libray for horizontal grid -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</html>
